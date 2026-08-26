@@ -108,7 +108,7 @@ The interactive dashboard includes:
 
 ## Dashboard Preview
 
-![E-Commerce Sales Dashboard](output/ecommerce_sales_dashboard.png)
+![E-Commerce Sales Dashboard](output/sales_dashboard.png)
 
 ---
 
