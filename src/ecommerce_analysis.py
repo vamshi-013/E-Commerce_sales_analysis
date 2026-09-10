@@ -29,9 +29,7 @@ df.to_csv(cleaned_file, index=False)
 
 print("\nCleaned dataset saved successfully!")
 
-# ==========================================
 # SALES SUMMARY
-# ==========================================
 
 print("\n========== SALES SUMMARY ==========")
 
@@ -39,9 +37,7 @@ print(f"Total Sales: ${df['Sales'].sum():,.2f}")
 print(f"Total Profit: ${df['Profit'].sum():,.2f}")
 print(f"Total Quantity Sold: {df['Quantity'].sum():,}")
 
-# ==========================================
 # CATEGORY ANALYSIS
-# ==========================================
 
 category_analysis = (
     df.groupby("Category")
@@ -60,9 +56,7 @@ category_analysis.to_csv(
     OUTPUT_DIR / "category_analysis.csv"
 )
 
-# ==========================================
 # REGION ANALYSIS
-# ==========================================
 
 region_analysis = (
     df.groupby("Region")
@@ -80,9 +74,7 @@ region_analysis.to_csv(
     OUTPUT_DIR / "region_analysis.csv"
 )
 
-# ==========================================
 # TOP SUB-CATEGORIES
-# ==========================================
 
 sub_category_analysis = (
     df.groupby("Sub-Category")
@@ -100,9 +92,7 @@ sub_category_analysis.to_csv(
     OUTPUT_DIR / "sub_category_analysis.csv"
 )
 
-# ==========================================
 # DISCOUNT ANALYSIS
-# ==========================================
 
 discount_analysis = (
     df.groupby("Discount")
@@ -120,9 +110,7 @@ discount_analysis.to_csv(
     OUTPUT_DIR / "discount_analysis.csv"
 )
 
-# ==========================================
 # VISUALIZATION 1 - SALES BY CATEGORY
-# ==========================================
 
 category_analysis["Total_Sales"].plot(
     kind="bar",

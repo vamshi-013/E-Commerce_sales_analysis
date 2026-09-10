@@ -17,10 +17,7 @@ print("E-COMMERCE SALES SQL ANALYSIS")
 print("=" * 50)
 
 
-# ==========================================
 # 1. TOTAL SALES SUMMARY
-# ==========================================
-
 print("\n========== SALES SUMMARY ==========")
 
 query = """
@@ -33,10 +30,7 @@ FROM sales;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 2. CATEGORY ANALYSIS
-# ==========================================
 
 print("\n========== CATEGORY ANALYSIS ==========")
 
@@ -53,10 +47,7 @@ ORDER BY total_sales DESC;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 3. REGION ANALYSIS
-# ==========================================
 
 print("\n========== REGION ANALYSIS ==========")
 
@@ -72,10 +63,7 @@ ORDER BY total_sales DESC;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 4. TOP 10 SUB-CATEGORIES
-# ==========================================
 
 print("\n========== TOP 10 SUB-CATEGORIES ==========")
 
@@ -92,10 +80,7 @@ LIMIT 10;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 5. LOSS-MAKING SUB-CATEGORIES
-# ==========================================
 
 print("\n========== LOSS-MAKING SUB-CATEGORIES ==========")
 
@@ -112,10 +97,7 @@ ORDER BY total_profit;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 6. CUSTOMER SEGMENT ANALYSIS
-# ==========================================
 
 print("\n========== CUSTOMER SEGMENT ANALYSIS ==========")
 
@@ -131,10 +113,7 @@ ORDER BY total_sales DESC;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 7. DISCOUNT IMPACT
-# ==========================================
 
 print("\n========== DISCOUNT IMPACT ON PROFIT ==========")
 
@@ -150,10 +129,7 @@ ORDER BY Discount;
 
 print(pd.read_sql_query(query, conn).to_string(index=False))
 
-
-# ==========================================
 # 8. TOP 10 STATES
-# ==========================================
 
 print("\n========== TOP 10 STATES BY SALES ==========")
 
