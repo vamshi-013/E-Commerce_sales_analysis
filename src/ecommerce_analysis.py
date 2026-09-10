@@ -129,9 +129,7 @@ plt.savefig(
 
 plt.close()
 
-# ==========================================
 # VISUALIZATION 2 - PROFIT BY REGION
-# ==========================================
 
 region_analysis["Total_Profit"].plot(
     kind="bar",
@@ -150,9 +148,8 @@ plt.savefig(
 
 plt.close()
 
-# ==========================================
+# 
 # VISUALIZATION 3 - SALES BY SUB-CATEGORY
-# ==========================================
 
 top_subcategories = sub_category_analysis.head(10)
 
@@ -172,9 +169,7 @@ plt.savefig(
 
 plt.close()
 
-# ==========================================
 # VISUALIZATION 4 - DISCOUNT VS PROFIT
-# ==========================================
 
 plt.figure(figsize=(8, 5))
 
