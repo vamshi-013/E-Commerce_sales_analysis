@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Load dataset
+# Load data set
 df = pd.read_csv("data/raw_sales_data.csv", encoding="latin1")
 
 print("=" * 50)
@@ -12,10 +12,10 @@ print("\nDataset loaded successfully!")
 print("\nRows and Columns:")
 print(df.shape)
 
-print("\nColumn Names:")
+print("\nColumn Names: ")
 print(df.columns.tolist())
 
-print("\nFirst 5 Rows:")
+print("\nFirst 5 Rows :")
 print(df.head())
 
 print("\nData Types:")
